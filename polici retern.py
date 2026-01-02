@@ -1,49 +1,56 @@
 import streamlit as st
 
-# පිටුවේ සැකසුම්
-st.set_page_config(page_title="Return Policy - SVP Web", layout="centered")
+st.set_page_config(page_title="Legal Policies - SVP Web", layout="centered")
 
-st.title("Return & Refund Policy")
+st.title("Business Terms & Policies")
 st.write("Last Updated: January 2026")
 
-# භාෂා දෙක තේරීමට tab දෙකක් පාවිච්චි කරමු
-tab1, tab2 = st.tabs(["English", "සිංහල"])
+tab1, tab2 = st.tabs(["English Version", "සිංහල අනුවාදය"])
 
 with tab1:
-    st.markdown("""
-    ### 1. Refund Eligibility
-    You are eligible for a refund if:
-    * The service was not delivered as described.
-    * A technical error caused a double payment.
+    # --- Terms & Conditions ---
+    st.header("1. Business Terms & Conditions")
+    st.write("""
+    * By using our services, you agree to provide accurate information.
+    * Payments must be made in full before service delivery.
+    * We reserve the right to modify our service fees with prior notice.
+    """)
 
-    ### 2. Time Frame
-    Refund requests must be made within **7 days** of the transaction date.
-
-    ### 3. Processing Time
-    Approved refunds will reflect in your original payment method within **5 to 10 working days**.
-
-    ### 4. Contact Us
-    * **Email:** isurukihanduwage1988lk@gmail.com
-    * **Phone:** 076 677 0856
+    # --- Return Policy ---
+    st.header("2. Return & Refund Policy")
+    st.write("""
+    * Refunds are processed for undelivered services or technical errors.
+    * Requests must be made within 7 days.
+    """)
+    
+    # --- Privacy Policy ---
+    st.header("3. Privacy Policy")
+    st.write("""
+    * We do not store your credit/debit card details. 
+    * All payments are securely handled by PayHere (Pvt) Ltd.
     """)
 
 with tab2:
-    st.markdown("""
-    ### 1. මුදල් ආපසු ලබාගැනීමේ සුදුසුකම්
-    පහත අවස්ථාවලදී ඔබට මුදල් ආපසු ලබාගත හැක:
-    * පොරොන්දු වූ පරිදි සේවාව ලබා නොදුන්නේ නම්.
-    * තාක්ෂණික දෝෂයක් නිසා එකම ගනුදෙනුව සඳහා දෙවරක් මුදල් කැපී ඇත්නම්.
+    # --- Terms & Conditions (Sinhala) ---
+    st.header("1. ව්‍යාපාරික කොන්දේසි (Terms & Conditions)")
+    st.write("""
+    * අපගේ සේවාවන් ලබාගැනීමේදී ඔබ නිවැරදි තොරතුරු ලබාදිය යුතුය.
+    * සේවාව ලබාදීමට පෙර සම්පූර්ණ ගෙවීම් සිදුකළ යුතුය.
+    * සේවා ගාස්තු සංශෝධනය කිරීමේ අයිතිය අප සතු වේ.
+    """)
 
-    ### 2. කාල සීමාව
-    ගනුදෙනුව සිදු කර **දින 7ක්** ඇතුළත අප වෙත දැනුම් දිය යුතුය.
+    # --- Return Policy (Sinhala) ---
+    st.header("2. මුදල් ආපසු ගෙවීමේ ප්‍රතිපත්තිය")
+    st.write("""
+    * සේවාව ලබා නොදුන් අවස්ථාවලදී හෝ තාක්ෂණික දෝෂවලදී මුදල් ආපසු ගෙවනු ලැබේ.
+    * දින 7ක් ඇතුළත දැනුම් දිය යුතුය.
+    """)
 
-    ### 3. මුදල් ලැබෙන කාලය
-    අනුමත වූ මුදල් දින **5 සිට 10 දක්වා** කාලයක් ඇතුළත ඔබේ ගිණුමට බැර කරනු ලැබේ.
-
-    ### 4. අප හා සම්බන්ධ වීමට
-    * **ඊමේල්:** isurukihanduwage1988lk@gmail.com
-    * **දුරකථන:** 076 677 0856
+    # --- Privacy Policy (Sinhala) ---
+    st.header("3. පෞද්ගලිකත්ව ප්‍රතිපත්තිය")
+    st.write("""
+    * ඔබගේ බැංකු කාඩ්පත් විස්තර අප ගබඩා කර නොගන්නා අතර ඒවා PayHere ආයතනය මගින් ඉතා ආරක්ෂිතව හසුරුවනු ලැබේ.
     """)
 
 st.divider()
-st.info("Securely processed by PayHere (Pvt) Ltd.")
+st.write("**Contact:** isurukihanduwage1988lk@gmail.com | 076 677 0856")
